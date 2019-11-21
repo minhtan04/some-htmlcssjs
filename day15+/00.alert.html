@@ -116,9 +116,9 @@
     </div>
 
     <div class="wrapper middle my">
-        <div class="my-alert-info my-alert" >
+        <div class="my-alert-info my-alert" id="myHide" >
             My info alert—check it out!
-            <button class="X">
+            <button class="X" >
                 <span>&times;</span>
             </button>
         </div>
@@ -153,7 +153,8 @@
 
     <script>
         $('.my-alert .X').click(function(){
-           $('body > div.wrapper.middle.my > div:nth-child(1)').hide()
+           // $('body > div.wrapper.middle.my > div:nth-child(1)').hide()
+            $('#myHide').hide()
         })
 
     </script>
